@@ -71,8 +71,7 @@ label {
   margin-bottom: 0.4rem;
   font-weight: 500;
 }
-input,
-select {
+input {
   width: 100%;
   padding: 0.7rem;
   font-size: 1rem;
@@ -80,6 +79,14 @@ select {
   border-radius: 0.5rem;
   background: inherit;
   color: inherit;
+}
+select {
+  width: 100%;
+  padding: 0.7rem;
+  font-size: 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 0.5rem;
+  background: inherit;
 }
 .input-wrapper {
   position: relative;
