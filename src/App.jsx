@@ -3,7 +3,7 @@ import { Loader, ChefHat, Sparkles, AlertTriangle, Send, Moon, Sun } from 'lucid
 
 export default function App() {
   const [ingredients, setIngredients] = useState('');
-  const [mealType, setMealType] = useState('Any');
+  const [mealType, setMealType] = useState('');
   const [recipes, setRecipes] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
