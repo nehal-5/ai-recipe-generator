@@ -1,0 +1,193 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+}
+.light {
+  background-color: #f3f4f6;
+  color: #1e293b;
+}
+.dark {
+  background-color: #0f172a;
+  color: #f1f5f9;
+}
+.app-container {
+  padding: 2rem;
+  min-height: 100vh;
+}
+.main {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.theme-toggle {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+}
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.logo h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+.subtitle {
+  font-size: 1.1rem;
+}
+.input-card {
+  background: var(--card-bg, #fff);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
+}
+.dark .input-card,
+.dark .recipe-card,
+.dark .loading-card {
+  background-color: #1e293b;
+}
+.input-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.input-group {
+  flex: 1;
+  min-width: 240px;
+}
+label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-weight: 500;
+}
+input,
+select {
+  width: 100%;
+  padding: 0.7rem;
+  font-size: 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 0.5rem;
+  background: inherit;
+  color: inherit;
+}
+.input-wrapper {
+  position: relative;
+}
+.send-icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+button {
+  margin-top: 1rem;
+  width: 100%;
+  padding: 0.9rem;
+  font-size: 1rem;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+button:disabled {
+  background: #93c5fd;
+  cursor: not-allowed;
+}
+.error {
+  background: #fee2e2;
+  color: #b91c1c;
+  border-left: 4px solid #ef4444;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.dark .error {
+  background: #7f1d1d;
+  color: #fee2e2;
+}
+.loading-card,
+.placeholder {
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  background: #fff;
+}
+.dark .placeholder {
+  background-color: #1e293b;
+}
+.spinner {
+  animation: spin 1s linear infinite;
+}
+.spinner-lg {
+  animation: spin 1s linear infinite;
+  width: 32px;
+  height: 32px;
+  margin-bottom: 0.5rem;
+  color: #2563eb;
+}
+.recipe-list {
+  display: grid;
+  gap: 1.5rem;
+}
+.recipe-card {
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  animation: fade-in 0.4s ease-in;
+  background-color: #fff;
+}
+.dark .recipe-card {
+  background-color: #1e293b;
+}
+.recipe-card h3 {
+  font-size: 1.5rem;
+}
+.recipe-card .desc {
+  font-style: italic;
+  margin: 0.5rem 0 1rem;
+}
+.steps p {
+  margin: 0.3rem 0;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
