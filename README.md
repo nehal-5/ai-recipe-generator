@@ -1,12 +1,37 @@
-# React + Vite
+# 🍳 AI Recipe Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A sleek web app that uses Google's Gemini AI to turn the ingredients you have into delicious recipes. Never wonder what to cook again!
 
-Currently, two official plugins are available:
+**Live Demo &rarr; [ai-delicious.vercel.app]([https://your-live-demo-link.com](https://ai-delicious.vercel.app/))**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ✨ Core Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* **Instant Recipes:** Get unique recipe ideas in seconds from just a list of ingredients.
+* **AI-Powered:** Uses the Google Gemini API for creative and relevant suggestions.
+* **Meal Type Filtering:** Narrow your search to breakfast, lunch, dinner, or dessert.
+* **Clean & Responsive:** Looks and works great on any device, from phones to desktops.
+
+---
+
+## 🛠️ Tech Stack
+
+**React** | **Google Gemini API** | **Tailwind CSS** | **JavaScript (ES6+)**
+
+---
+
+## 🚀 Run Locally
+
+1.  **Clone the repo:**
+    ```bash
+    git clone [https://github.com/your-username/ai-recipe-generator.git](https://github.com/your-username/ai-recipe-generator.git)
+    ```
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
+3.  **Start the server:**
+    ```bash
+    npm start
+    ```
